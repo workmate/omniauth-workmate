@@ -3,7 +3,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('omniauth-workmate', '0.0.1') do |p|
+Echoe.new('omniauth-workmate', '0.0.2') do |p|
   p.description    = "WorkMate strategy for OmniAuth."
   p.url            = "http://github.com/workmate/omniauth-workmate"
   p.author         = "Iskander Haziev"
