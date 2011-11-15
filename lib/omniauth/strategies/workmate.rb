@@ -18,13 +18,13 @@ module OmniAuth
       info do
         {
           'email' => raw_info['email'],
-          'name' => raw_info['name']
+          'full_name' => raw_info['full_name']
         }
       end
 
       def raw_info
         access_token.options[:mode] = :query
-        @raw_info ||= access_token.get('/user').parsed
+        @raw_info ||= access_token.get('/api/users/me').parsed
       end
     end
   end
